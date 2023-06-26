@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1> Conversor de Unidade </h1>
+    </header>
+
+    <img class="colunaGifEsquerda" src="./img/coluna.gif">
+    <img class="colunaGifDireita" src="./img/coluna.gif">
+
+    <div class="caixaForm">
+  <form>
+    <label for="valor"> Insira aqui o valor desejado: </label>
+    <input type="number" id="valor" required>
+
+    <label for="categoria"> Selecione a categoria: </label>
+    <select id="categoria" onchange="atualizarUnidades()"></select>
+
+    <label for="unidadeOrigem"> Unidade de medida inicial: </label>
+    <select id="unidadeOrigem"></select>
+
+    <label for="unidadeDestino"> Unidade de medida a ser convertida: </label>
+    <select id="unidadeDestino"></select>
+
+    <button type="button" onclick="converter()">Converter</button>
+
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+  </form>
+  </div>
+
+</body>
+</html>
+
